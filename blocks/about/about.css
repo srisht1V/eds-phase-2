@@ -71,9 +71,11 @@ main .about-container {
         margin: 2% 0;
     }
 
-    .about-container .about {
-        flex-direction: row;
-        justify-content: space-between;
+        .about-container .about {
+            flex-direction: row;
+            justify-content: left;
+            gap: 150px;
+        }
     }
 
     .about-container .about div div:last-child {

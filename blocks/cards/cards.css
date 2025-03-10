@@ -57,7 +57,6 @@
   border-bottom: 1px solid dimgray;
 }
 
-
 .cards-container .button-container a.button {
   background-color: var(--button-background-color);
   border-radius: 0%;
@@ -70,8 +69,8 @@
 @media (width >= 900px) {
   .cards > ul {
     padding: 20px 60px 20px 0px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures a max of 4 cards per row */
     gap: 24px;
   }
 
@@ -81,35 +80,34 @@
 
   .cards-container .button-container a.button {
     padding: 1% 0%;
-    
   }
+
   /* Apply yellow background to buttons within .default-content-wrapper */
-/* Apply yellow background to buttons within .default-content-wrapper,
+  /* Apply yellow background to buttons within .default-content-wrapper,
    excluding those inside .cards-wrapper */
-   .default-content-wrapper .button-container a.button {
+  .default-content-wrapper .button-container a.button {
     box-sizing: border-box;
-  display: inline-block;
-  max-width: 100%;
-  margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: 0%;
-  padding: 0.5em 1.2em;
-  font-family: var(--body-font-family);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
-  text-align: center;
-  text-decoration: none;
-  background-color: var(--button-background-color);
-  color: var(--text-color);
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    display: inline-block;
+    max-width: 100%;
+    margin: 12px 0;
+    border: 2px solid transparent;
+    border-radius: 0%;
+    padding: 0.5em 1.2em;
+    font-family: var(--body-font-family);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--button-background-color);
+    color: var(--text-color);
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
-  
+
   .cards-wrapper .button-container a.button {
     background-color: white; /* Reset or specify a different color */
   }
-  
 }
