@@ -1,0 +1,87 @@
+main .about-container {
+    margin: 3%;
+    font-family:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.about-container .default-content-wrapper h3 {
+    font-size: 2rem;
+}
+
+.about-container .default-content-wrapper h3::after {
+    content: '';
+    border: 2px solid var(--button-background-color);
+    top: 0.25em;
+    width: 5pc;
+    display: block;
+    position: relative;
+}
+
+.about-container .default-content-wrapper p {
+    margin-top: 5%;
+    font-size: 0.7rem;
+    line-height: 2;
+    font-style: italic;
+}
+
+.about-container .about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container .about div div:first-child {
+    flex: 2;
+    text-align: center;
+}
+
+.about-container .about div img {
+    border-radius: 50%;
+    height: 164px;
+    width: 164px;
+    object-fit: cover;
+}
+
+.about-container .about div div:nth-of-type(2) {
+    text-align: center;
+    margin-top: -5%;
+    line-height: 1.2;
+}
+
+.about-container .about div div:nth-of-type(2) p:last-child {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.about-container .about div div:last-child {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 125px;
+    margin: 5% 32% 10%;
+}
+
+.about-container .about div div:last-child img {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+}
+
+@media (width >= 900px) {
+    .about-container .default-content-wrapper p {
+        margin: 2% 0;
+    }
+
+    .about-container .about {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-container .about div div:last-child {
+        margin: 9% 20% 10%;
+    }
+
+    .about-container .about {
+        flex: 1;
+    }
+
+}
