@@ -273,7 +273,7 @@ header nav .nav-sections ul>li>ul>li {
 
 @media (width >=1200px) {
   header nav[aria-expanded='true'] .nav-sections {
-    left: 20%;
+    left: 10%;
   }
 }
 
